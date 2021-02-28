@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "t4qsVu9xUHzW4jYka+oJpuPb0cD4vqKH4OEqaa5oSiagRiJQw2xQFHP1HR3u7ZvwieDCQH0Wo+zV8rs9DvlJog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\GregoriBrunoFelicio\\Desktop\\Repositories\\FSharp\\F-API\\F-API.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GregoriBrunoFelicio\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512",
+    "C:\\Users\\GregoriBrunoFelicio\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
