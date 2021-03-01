@@ -1,13 +1,17 @@
 ﻿namespace F_API.Controllers
 
 open Microsoft.AspNetCore.Mvc
-open Context
+open ClientService
 
 [<ApiController>]
-[<Route("clients")>]
+[<Route("[controller]")>]
 type ClientsController () =
     inherit ControllerBase()
 
     [<HttpGet>]
     member _.Get() =
-        Context.getContext(@"C:/temp").Clients.Data
+        ClientService.getClients
+
+    [<HttpPost>]
+    member _.Post(client) =
+        ClientService.addClient client

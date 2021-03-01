@@ -1,6 +1,7 @@
 ﻿module Context
 open Model
 open Table
+open Configurations
 
 type Context = {
     Clients: Table<Client>
@@ -40,8 +41,9 @@ let initialPurchases =
        } 
     ]
 
-let getContext baseDirectory =
-    let context = {
+let getContext =
+    let baseDirectory = Configurations.tableDirectory
+    {
       Clients = createTableToApplication
                         baseDirectory
                         "/Clients.json"
@@ -57,6 +59,5 @@ let getContext baseDirectory =
                         "/Purchases.json"
                         initialPurchases
     }
-    context
 
 
