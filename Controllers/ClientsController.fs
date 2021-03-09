@@ -15,3 +15,7 @@ type ClientsController () =
     [<HttpPost>]
     member _.Post(client) =
         ClientService.addClient client
+
+    [<HttpDelete>]
+    member _.Delete(id) =
+        ClientService.delete id
